@@ -1,0 +1,9 @@
+[package]
+name = "storage_macro_rust_fallback"
+keywords = ["storage macro", "colink internal"]
+description = "The internal CoLink module for falling back to rust implementation of storage macro"
+entrypoint = "cargo run"
+
+[policy_module]
+name = "storage_macro_rust_fallback"
+description = "storage macro fallback"
