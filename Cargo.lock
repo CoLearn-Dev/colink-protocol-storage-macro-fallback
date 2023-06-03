@@ -535,6 +535,8 @@ name = "colink-protocol-storage-macro-fallback"
 version = "0.1.0"
 dependencies = [
  "colink",
+ "serde",
+ "serde_json",
  "tokio",
  "tracing",
 ]

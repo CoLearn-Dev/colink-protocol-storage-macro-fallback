@@ -1,0 +1,14 @@
+on:
+  release:
+    types: [released]
+
+name: Build
+
+jobs:
+  build:
+    uses: CoLearn-Dev/colink-protocol-inventory-workflow-templates/.github/workflows/rust.yml@main
+    with:
+      protocol_name: storage-macro-rust-fallback
+      package_name: colink-protocol-storage-macro-rust-fallback
+    secrets:
+      SSH_KEY: ${{ secrets.SSH_KEY }}
